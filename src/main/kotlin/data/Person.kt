@@ -9,4 +9,8 @@ class Person(val name: String) {
         is Person -> name == other.name
         else -> false
     }
+
+    override fun toString(): String {
+        return "Person with name $name"
+    }
 }
